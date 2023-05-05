@@ -9,6 +9,9 @@ end_port = 65535
 if os.path.exists("open_ports.txt"):
     with open("open_ports.txt", "a") as f:
         f.write("\n")
+else:
+    with open("open_ports.txt", "w") as f:
+        pass
 
 
 def port_scan(port):
